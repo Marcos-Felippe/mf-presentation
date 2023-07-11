@@ -1,0 +1,132 @@
+.container {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.mainTitle {
+    font-size: 90px;
+}
+
+.selectTitle {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_lang, .item_tecs {
+    margin: auto;
+    color: #e5e5e5;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background-color: #353535;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+}
+
+.item_lang:nth-child(1) {
+    background-image: url("/javascript.png");
+}
+.item_lang:nth-child(2) {
+    background-image: url("/python.png");
+}
+.item_lang:nth-child(3) {
+    background-image: url("/go.png");
+}
+.item_lang:nth-child(4) {
+    background-image: url("/dart.png");
+}
+.item_lang:nth-child(5) {
+    background-image: url("/database.png");
+}
+
+.item_tecs:nth-child(1) {
+    background-image: url("/react.png");
+}
+.item_tecs:nth-child(2) {
+    background-image: url("/nextjs.jpg");
+}
+.item_tecs:nth-child(3) {
+    background-image: url("/nestjs.png");
+}
+.item_tecs:nth-child(4) {
+    background-image: url("/flutter.png");
+}
+.item_tecs:nth-child(5) {
+    background-image: url("/docker.png");
+}
+.item_tecs:nth-child(6) {
+    background-image: url("/mongodb.png");
+}
+.item_tecs:nth-child(7) {
+    background-image: url("/mysql.png");
+}
+.item_tecs:nth-child(8) {
+    background-image: url("/postgresql.png");
+}
+.item_tecs:nth-child(9) {
+    background-image: url("/kafka.png");
+}
+.item_tecs:nth-child(10) {
+    background-image: url("/rabbitmq.png");
+}
+.item_tecs:nth-child(11) {
+    background-image: url("/redis.png");
+}
+.item_tecs:nth-child(12) {
+    background-image: url("/redis.png");
+}
+
+.title {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.item_lang:hover, .item_tecs:hover {
+    color: #08bbb5;
+}
+
+.item_lang:hover, .item_tecs:hover {
+    border: 3px solid #08bbb5;
+}
+
+@media (max-width: 770px) {
+
+    .items {
+        gap: 25px;
+    }
+
+    .item_lang, .item_tecs {
+        width: 100px;
+        height: 100px;
+        background-size: 35px 35px;
+    }
+    
+    .title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .selectTitle {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+}

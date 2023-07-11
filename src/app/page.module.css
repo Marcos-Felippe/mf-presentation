@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.item_img_cont {
+  padding: 5px;
+  margin: 2px;
+}
+
+.item_img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+
+  background-size: cover !important;
+  background: url("/hero.jpg");
+}
+
+.title {
+  font-size: 72px;
+  background: linear-gradient(to bottom, #00a5a5, #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.desc {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.bubles_container {
+  padding: 5px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bubles1 {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #08bbb5;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.bubles2 {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #08bbb5;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.bubles3 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #08bbb5;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.bubles1:hover, .bubles2:hover, .bubles3:hover {
+  background-color: #a3e6e4;
+}
+
+@media (max-width: 1260px) {
+
+  .title {
+    font-size: 60px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 890px) {
+
+  .title {
+    font-size: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item_img_cont {
+    padding: 5px;
+    margin-top: 25px;
+  }
+
+  .item {
+    align-items: center;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  .title {
+    font-size: 40px;
+  }
+
+  .desc {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .item_img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 465px) {
+
+  .title {
+    font-size: 30px;
+  }
+
+  .desc {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 330px) {
+
+  .item_img {
+    width: 250px;
+    height: 250px;
+  }
+}

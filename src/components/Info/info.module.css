@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title_container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: end;
+}
+
+.bubles_container {
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+  
+.bubles1 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #08bbb5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+  
+.bubles2 {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #08bbb5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+  
+.bubles3 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #08bbb5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+.bubles1:hover, .bubles2:hover, .bubles3:hover {
+    background-color: #a3e6e4;
+}
+
+@media (max-width: 890px) {
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .title_container {
+        margin-top: 0px;
+    }
+
+    .bubles_container {
+        justify-content: center;
+    }
+    
+}
+  

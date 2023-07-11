@@ -1,0 +1,41 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+  
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  font-size: 16px;
+}
+
+.link:hover {
+  color: #08bbb5;
+}
+
+@media (max-width: 450px) {
+  .link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 354px) {
+  .link {
+    font-size: 12px;
+  }
+
+  .links {
+    gap: 10px;
+  }
+}
