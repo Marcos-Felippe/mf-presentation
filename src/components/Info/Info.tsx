@@ -41,18 +41,18 @@ const Info = () => {
 
         <div className={styles.social}>
             <h2 className={styles.socialTitle}>Social</h2>
-            <Link href="https://github.com/Marcos-Felippe" className={styles.link}>
+            <a href="https://github.com/Marcos-Felippe" className={styles.link}>
                 <div className={styles.badgeGH}>
                     <h3 className={styles.titleSocialBadge}>GitHub</h3>
                     <div className={styles.iconGH}></div>
                 </div>
-            </Link>
-            <Link href="https://www.linkedin.com/in/marcos-felippe-ab26b11a4" className={styles.link}>
+            </a>
+            <a href="https://www.linkedin.com/in/marcos-felippe-ab26b11a4" className={styles.link}>
                 <div className={styles.badgeLN}>
                     <h3 className={styles.titleSocialBadge}>Linkedin</h3>
                     <div className={styles.iconLN}></div>
                 </div>
-            </Link>
+            </a>
         </div>
     </div>
   )
