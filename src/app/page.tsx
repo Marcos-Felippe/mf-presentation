@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import { Roboto_Mono } from "next/font/google";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import Info from "@/components/Info/Info";
+import Skills from "@/components/Skills/Skills";
 
 export const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
@@ -39,6 +40,8 @@ export default function Home() {
       </div>
 
       <Info/>
+
+      <Skills/>
 
       <Portfolio/>
       

@@ -11,10 +11,38 @@
   gap: 50px;
 }
 
-.item_img_cont {
-  padding: 5px;
-  margin: 2px;
+
+.title {
+  font-size: 72px;
+  background: linear-gradient(to bottom, #00a5a5, #bbb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: titleColor 20s linear infinite;
+  animation-delay: 5s;
+  -webkit-animation: titleColor 20s ease-in-out infinite;
 }
+
+@keyframes titleColor {
+  0% {
+    background: linear-gradient(to bottom, #00a5a5, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: linear-gradient(to top, #00a5a5, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+.item_img_cont {
+  margin: 2px;
+  border-radius: 5px;
+  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 160, 171, 0.12) 0px -12px 30px, rgba(0, 104, 111, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 213, 255, 0.09) 0px -3px 5px;
+}
+
 
 .item_img {
   width: 400px;
@@ -25,18 +53,12 @@
   background: url("/hero.jpg");
 }
 
-.title {
-  font-size: 72px;
-  background: linear-gradient(to bottom, #00a5a5, #bbb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .img {
   width: 100%;
   max-height: 400px;
   object-fit: contain;
 }
+
 
 .desc {
   font-size: 24px;
@@ -86,6 +108,7 @@
 .bubles1:hover, .bubles2:hover, .bubles3:hover {
   background-color: #a3e6e4;
 }
+
 
 @media (max-width: 1260px) {
 

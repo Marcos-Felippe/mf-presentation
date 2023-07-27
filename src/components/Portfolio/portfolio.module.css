@@ -8,9 +8,11 @@
 }
 
 .selectTitle {
+    font-size: 35px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
 
 .items {
     display: flex;
@@ -34,7 +36,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80px 80px;
+    transition: width 2s, height 2s, transform 2s;
 }
+
+.item_lang:hover, .item_tecs:hover {
+    background-size: 50px 50px;
+    transform: rotate(360deg);
+}
+
 
 .item_lang:nth-child(1) {
     background-image: url("/javascript.png");
@@ -89,6 +98,7 @@
     background-image: url("/redis.png");
 }
 
+
 .title {
     position: absolute;
     right: 10px;
@@ -116,13 +126,18 @@
         height: 100px;
         background-size: 35px 35px;
     }
+
+    .item_lang:hover, .item_tecs:hover {
+        background-size: 25px 25px;
+        transform: rotate(360deg);
+    }
     
     .title {
         font-size: 15px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 
     .selectTitle {
         margin-top: 50px;

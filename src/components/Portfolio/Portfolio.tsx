@@ -7,7 +7,7 @@ const Portfolio = () => {
     <div className={styles.container}>
 
         <div className={roboto_mono.className}>
-            <h1 className={styles.selectTitle}>languages</h1>
+            <h2 className={styles.selectTitle}>languages</h2>
         </div>
         <div className={styles.items}>
         
@@ -29,7 +29,7 @@ const Portfolio = () => {
         </div>
 
         <div className={roboto_mono.className}>
-            <h1 className={styles.selectTitle}>tecnologies</h1>
+            <h2 className={styles.selectTitle}>tecnologies</h2>
         </div>
         <div className={styles.items}>
 
@@ -52,7 +52,7 @@ const Portfolio = () => {
                 <span className={styles.title}>Mongo</span>
             </div>
             <div className={styles.item_tecs}>
-                <span className={styles.title}>MySql</span>
+                <span className={styles.title}>MySQL</span>
             </div>
             <div className={styles.item_tecs}>
                 <span className={styles.title}>Postegre</span>

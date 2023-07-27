@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./info.module.css";
 import { roboto_mono } from '@/app/page';
+import Link from 'next/link';
 
 
 const Info = () => {
@@ -37,6 +38,22 @@ const Info = () => {
                 Automation and Data Analysis skills (pandas, tensorflow, jupyter, machine learning...).
             </li>
         </ul>
+
+        <div className={styles.social}>
+            <h2 className={styles.socialTitle}>Social</h2>
+            <Link href="https://github.com/Marcos-Felippe" className={styles.link}>
+                <div className={styles.badgeGH}>
+                    <h3 className={styles.titleSocialBadge}>GitHub</h3>
+                    <div className={styles.iconGH}></div>
+                </div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/marcos-felippe-ab26b11a4" className={styles.link}>
+                <div className={styles.badgeLN}>
+                    <h3 className={styles.titleSocialBadge}>Linkedin</h3>
+                    <div className={styles.iconLN}></div>
+                </div>
+            </Link>
+        </div>
     </div>
   )
 }

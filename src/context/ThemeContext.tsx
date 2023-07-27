@@ -11,10 +11,10 @@ export const ThemeContext = createContext({} as ThemeContextType);
 
 export const ThemeProvider = ({ children }: any) => {
   
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
 
   const toggle = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setMode((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (

@@ -24,6 +24,8 @@
     text-align: end;
 }
 
+
+
 .bubles_container {
     width: 100%;
     padding: 5px;
@@ -71,6 +73,91 @@
     background-color: #a3e6e4;
 }
 
+
+
+.social {
+    margin-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #bbbbbba7;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.17) 0px 12px 13px;
+}
+
+.socialTitle {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #00a5a5, #fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.badgeGH, .badgeLN {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 120px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 104, 111, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px;
+}
+
+.badgeGH {
+    background-color: #67008a98;
+}
+
+.badgeLN {
+    background-color: #1656c6bc;
+}
+
+.link {
+    margin: 0;
+}
+
+.titleSocialBadge {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+.iconGH, .iconLN {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-left: 10px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
+.iconGH{
+    background-image: url("/github2.png");
+}
+
+.iconLN{
+    background-image: url("/linkedin.png");
+}
+
+.badgeGH:hover, .badgeLN:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 160, 171, 0.12) 0px -12px 30px, rgba(0, 104, 111, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 213, 255, 0.09) 0px -3px 5px;
+}
+
+
+
 @media (max-width: 890px) {
 
     .container {
@@ -83,6 +170,10 @@
 
     .bubles_container {
         justify-content: center;
+    }
+
+    .social {
+        margin-top: 60px;
     }
     
 }
