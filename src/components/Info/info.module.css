@@ -45,6 +45,9 @@
     border-radius: 50%;
     color: white;
     font-weight: bold;
+    animation: bublesColor 20s linear infinite;
+    animation-delay: 5s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb5a0 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
   
 .bubles2 {
@@ -56,6 +59,9 @@
     border-radius: 50%;
     color: white;
     font-weight: bold;
+    animation: bublesColor 20s linear infinite;
+    animation-delay: 5s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb5a0 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
   
 .bubles3 {
@@ -67,10 +73,32 @@
     border-radius: 50%;
     color: white;
     font-weight: bold;
+    animation: bublesColor 20s linear infinite;
+    animation-delay: 5s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb5a0 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .bubles1:hover, .bubles2:hover, .bubles3:hover {
     background-color: #a3e6e4;
+}
+
+@keyframes bublesColor {
+    5% {
+      background-color: #a3e6e4;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #a3e6e48b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    25% {
+      background-color: #efa18d;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #efa18d8b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    50% {
+      background-color: #ff4416;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #ff44168b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    75% {
+      background-color: #08bbb5;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb58b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
 }
 
 

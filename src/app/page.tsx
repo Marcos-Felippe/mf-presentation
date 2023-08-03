@@ -15,8 +15,11 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.item}>
           <div className={roboto_mono.className}>
+            <p className={styles.titleType}>
+              Hi!
+            </p>
             <h1 className={styles.title}>
-              Hi! Welcome to my presentation website.
+              Welcome to my presentation website.
             </h1>
           </div>
           

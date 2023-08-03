@@ -22,6 +22,17 @@
   -webkit-animation: titleColor 20s ease-in-out infinite;
 }
 
+.titleType {
+  font-size: 72px;
+  color: #00a5a5;
+  font-weight: 600;
+  border-right: 4px solid #7b7b7b;
+  width: 3ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(3), blinking 0.5s infinite step-end alternate;
+}
+
 @keyframes titleColor {
   0% {
     background: linear-gradient(to bottom, #00a5a5, #bbb);
@@ -32,6 +43,18 @@
     background: linear-gradient(to top, #00a5a5, #bbb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
   }
 }
 
@@ -81,6 +104,9 @@
   border-radius: 50%;
   color: white;
   font-weight: bold;
+  animation: bublesColor 20s linear infinite;
+  animation-delay: 5s;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb5a0 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .bubles2 {
@@ -92,6 +118,9 @@
   border-radius: 50%;
   color: white;
   font-weight: bold;
+  animation: bublesColor 20s linear infinite;
+  animation-delay: 5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, #08bbb5a0 0px 2px 30px;
 }
 
 .bubles3 {
@@ -103,10 +132,28 @@
   border-radius: 50%;
   color: white;
   font-weight: bold;
+  animation: bublesColor 20s linear infinite;
+  animation-delay: 5s;
+  box-shadow: rgba(0, 0, 0, 0.807) 0px 54px 55px, #08bbb5a0 0px 2px 30px;
 }
 
-.bubles1:hover, .bubles2:hover, .bubles3:hover {
-  background-color: #a3e6e4;
+@keyframes bublesColor {
+  5% {
+    background-color: #a3e6e4;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #a3e6e48b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  25% {
+    background-color: #efa18d;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #efa18d8b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  50% {
+    background-color: #ff4416;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #ff44168b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  75% {
+    background-color: #08bbb5;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, #08bbb58b 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
 }
 
 
@@ -123,13 +170,13 @@
   .title {
     font-size: 50px;
   }
+
+  .titleType {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 890px) {
-
-  .title {
-    font-size: 50px;
-  }
 
   .container {
     flex-direction: column;
@@ -153,6 +200,10 @@
     font-size: 40px;
   }
 
+  .titleType {
+    font-size: 40px;
+  }
+
   .desc {
     font-size: 22px;
     font-weight: 300;
@@ -167,6 +218,10 @@
 @media (max-width: 465px) {
 
   .title {
+    font-size: 30px;
+  }
+
+  .titleType {
     font-size: 30px;
   }
 
